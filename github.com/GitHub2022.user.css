@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         GitHub 2022
+@namespace    github.com
+@version      1.0
+@description  Comfortable GitHub how I liked it in 2022
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+  aside.feed-right-sidebar > div > div.js-notice > form.js-notice-dismiss {
+    /* top right ad banner */
+    display: none;
+  }
+  div#repos-sticky-header > div > div > div > div.react-code-size-details-in-header > button {
+    /* text ad in file view */
+    display: none;
+  }
+  div#dashboard > div.news > div.copilotPreview__container {
+    /* copilot form in home */
+    display: none;
+  }
+  div.AppHeader-globalBar > div.AppHeader-globalBar-end > div.AppHeader-CopilotChat {
+    /* copilot button in every header */
+    display: none !important;
+  }
+}
