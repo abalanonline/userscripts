@@ -10,7 +10,7 @@
     /* top right ad banner */
     display: none;
   }
-  div#repos-sticky-header > div > div > div > div.react-code-size-details-in-header > button {
+  span:has(> span > svg.octicon-copilot) {
     /* text ad in file view */
     display: none;
   }
