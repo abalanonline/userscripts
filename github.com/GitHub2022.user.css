@@ -22,4 +22,8 @@
     /* copilot button in every header */
     display: none !important;
   }
+  div:has(> div > h2#ai-search-cta-heading) {
+    /* ad popup in the center of the screen of GitHub Docs */
+    display: none;
+  }
 }
