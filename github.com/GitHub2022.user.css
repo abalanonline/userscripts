@@ -14,6 +14,10 @@
     /* text ad in file view */
     display: none;
   }
+  div:has(> div.height-full > svg.octicon-copilot) {
+    /* ad in empty repo */
+    display: none;
+  }
   div#dashboard > div.news > div.copilotPreview__container {
     /* copilot form in home */
     display: none;
