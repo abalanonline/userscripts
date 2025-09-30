@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name         StackOverflow Quiet
+@namespace    stackoverflow.com
+@version      1.0
+@description  A calm, distraction-free theme that keeps your attention on the work
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com") {
+  div.js-zone-container:has(> div.js-report-ad-button-container > button.js-report-ad) {
+    display: none;
+  }
+}
