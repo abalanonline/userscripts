@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         Google Noslop
+@namespace    google.com
+@version      1.0
+@description  Improve the quality of Google search output
+==/UserStyle== */
+
+@-moz-document domain("google.com") {
+  div[data-hveid]:has(> div[data-hveid] > div[id] > div[class] > div[class]
+    > div[jscontroller] > div[jsname] > div[data-mcpr] > div[data-is-desktop="1"]) {
+    display: none;
+  }
+  div[class]:has(> div[class] > div[jsname] > div[data-mcpr] > div[data-is-desktop="1"]) {
+    display: none;
+  }
+}

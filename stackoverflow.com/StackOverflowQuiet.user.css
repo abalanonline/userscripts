@@ -6,7 +6,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("stackoverflow.com") {
-  div.js-zone-container:has(> div.js-report-ad-button-container > button.js-report-ad) {
+  div.js-zone-container:has(> div.js-report-ad-button-container) {
     display: none;
   }
 }
