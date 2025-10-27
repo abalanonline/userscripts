@@ -30,4 +30,9 @@
     /* ad popup in the center of the screen of GitHub Docs */
     display: none;
   }
+  div:has(> section[aria-label="Information"] > div > div > div.BannerDescription > span >
+    a[href="https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets"]) {
+    /* branch protection nag message */
+    display: none;
+  }
 }

@@ -6,10 +6,12 @@
 ==/UserStyle== */
 
 @-moz-document domain("google.com") {
+  /* top level slop */
   div[data-hveid]:has(> div[data-hveid] > div[id] > div[class] > div[class]
     > div[jscontroller] > div[jsname] > div[data-mcpr] > div[data-is-desktop="1"]) {
     display: none;
   }
+  /* second level slop */
   div[class]:has(> div[class] > div[jsname] > div[data-mcpr] > div[data-is-desktop="1"]) {
     display: none;
   }

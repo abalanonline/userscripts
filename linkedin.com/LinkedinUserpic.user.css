@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name         LinkedinUserpic
+@namespace    linkedin.com
+@version      1.0
+@description  assists me in my ego management by removing user pictures from the page
+==/UserStyle== */
+
+@-moz-document domain("linkedin.com") {
+  /* popup */
+  div.upsell-animated-fullpage-takeover-modal__profile-image-container:has(
+    > div.upsell-animated-fullpage-takeover-modal__profile-image 
+    > div.ivm-view-attr__img-wrapper > img.EntityPhoto-circle-8) {
+    display: none !important;
+  }
+  /* nav bar */
+  div.global-nav__me > button.global-nav__primary-link-me-menu-trigger > img.global-nav__me-photo {
+    opacity: 0;
+  }
+  /* sidebar */
+  a.profile-card-profile-picture-container:has(> img.profile-card-profile-picture) {
+    display: none;
+  }
+  a.profile-card-profile-link:has(> div.profile-card-background-image) {
+    display: none !important;
+  }
+  /* start a post */
+  a.ember-view:has(> div.share-box-feed-entry__avatar > img.EntityPhoto-circle-3) {
+    display: none;
+  }
+  /* right banner */
+  div.scaffold-layout__sticky:has(> div.scaffold-layout__sticky-content > section.ad-banner-container > iframe.ad-banner) {
+    _display: none;
+  }
+  /* messaging */
+  aside#msg-overlay > div > header > div > div.presence-entity--size-1:has(> img.EntityPhoto-circle-1) {
+    display: none;
+  }
+
+  /* sudoku toys */
+  div:has(> div.news-module__subheader > h3#todays-games-entrypoint-title) {
+    display: none;
+  }
+}
