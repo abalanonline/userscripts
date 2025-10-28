@@ -8,13 +8,30 @@
 @-moz-document domain("linkedin.com") {
   /* popup */
   div.upsell-animated-fullpage-takeover-modal__profile-image-container:has(
-    > div.upsell-animated-fullpage-takeover-modal__profile-image 
+    > div.upsell-animated-fullpage-takeover-modal__profile-image
     > div.ivm-view-attr__img-wrapper > img.EntityPhoto-circle-8) {
     display: none !important;
   }
   /* nav bar */
   div.global-nav__me > button.global-nav__primary-link-me-menu-trigger > img.global-nav__me-photo {
     opacity: 0;
+  }
+  div[data-testid="primary-nav"] > div > div > div > div > nav > ul > li
+    > button[data-view-name="navigation-settings"] > span > figure[role="image"] > img {
+    opacity: 0;
+  }
+  /* nav bar menu item */
+  div[role="menu"] > a > div > div > figure[data-view-name="image"]:has(> svg#person-accent-4) {
+    display: none;
+  }
+  div.artdeco-dropdown__content-inner > header.p2 > a.ember-view > div.artdeco-entity-lockup
+    > div.artdeco-entity-lockup__image--type-circle:has(> img.global-nav__me-photo) {
+    display: none;
+  }
+  /* sticky header in profile page */
+  section.scaffold-layout-toolbar > div.scaffold-layout-container > div
+    > div.artdeco-entity-lockup > div.presence-entity:has(> img.EntityPhoto-circle-1) {
+    display: none;
   }
   /* sidebar */
   a.profile-card-profile-picture-container:has(> img.profile-card-profile-picture) {
@@ -29,12 +46,21 @@
   }
   /* right banner */
   div.scaffold-layout__sticky:has(> div.scaffold-layout__sticky-content > section.ad-banner-container > iframe.ad-banner) {
-    _display: none;
+    display: none;
   }
   /* messaging */
   aside#msg-overlay > div > header > div > div.presence-entity--size-1:has(> img.EntityPhoto-circle-1) {
     display: none;
   }
+  /* left banner */
+  section.da-card-creative:has(> div.da-card-creative__image-brand
+    > section.da-card-creative__pic-container > img.da-card-creative__profile-image) {
+    display: none;
+  }
+  div#react-root > main:has(> header > div.absolute > img.border-color-canvas-tint) {
+    display: none;
+  }
+  /* every selector removes one userpic, imagine the total number */
 
   /* sudoku toys */
   div:has(> div.news-module__subheader > h3#todays-games-entrypoint-title) {
