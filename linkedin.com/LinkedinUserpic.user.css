@@ -44,6 +44,12 @@
   a.ember-view:has(> div.share-box-feed-entry__avatar > img.EntityPhoto-circle-3) {
     display: none;
   }
+  /* banner inside the feed */
+  div.fie-impression-container:has(> div.update-components-promo > div.update-components-promo-v1
+    > div > div.update-components-promo-v1__image-background > a > div.ivm-image-view-model
+    > div.ivm-view-attr__img-wrapper > img.update-components-promo-v1__image--circle) {
+    display: none;
+  }
   /* right banner */
   div.scaffold-layout__sticky:has(> div.scaffold-layout__sticky-content > section.ad-banner-container > iframe.ad-banner) {
     display: none;
@@ -58,6 +64,11 @@
     display: none;
   }
   div#react-root > main:has(> header > div.absolute > img.border-color-canvas-tint) {
+    display: none;
+  }
+  /*jobs page ad */
+  div.jobs-home-upsell-card__container > div > div > div.card-upsell-v2__illustration:has(
+    > div.ivm-image-view-model > ul > li > div.ivm-view-attr__img-wrapper > img.EntityPhoto-circle-4-stackedFacepile) {
     display: none;
   }
   /* every selector removes one userpic, imagine the total number */
