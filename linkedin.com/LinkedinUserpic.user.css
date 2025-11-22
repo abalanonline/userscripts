@@ -50,6 +50,12 @@
     > div.ivm-view-attr__img-wrapper > img.update-components-promo-v1__image--circle) {
     display: none;
   }
+  /* banner inside the feed 2 */
+  section.launchpad-v2:has(> div > div.launchpad-v2-single-content-layout > div.launchpad-v2-card
+    > div.launchpad-v2-card-with-image-1 > div.launchpad-v2-card-with-image-1__image
+    > div.ivm-image-view-model > div.ivm-view-attr__img-wrapper > img.EntityPhoto-circle-8) {
+    display: none;
+  }
   /* right banner */
   div.scaffold-layout__sticky:has(> div.scaffold-layout__sticky-content > section.ad-banner-container > iframe.ad-banner) {
     display: none;
@@ -66,7 +72,7 @@
   div#react-root > main:has(> header > div.absolute > img.border-color-canvas-tint) {
     display: none;
   }
-  /*jobs page ad */
+  /* jobs page ad */
   div.jobs-home-upsell-card__container > div > div > div.card-upsell-v2__illustration:has(
     > div.ivm-image-view-model > ul > li > div.ivm-view-attr__img-wrapper > img.EntityPhoto-circle-4-stackedFacepile) {
     display: none;
@@ -74,7 +80,7 @@
   /* every selector removes one userpic, imagine the total number */
 
   /* sudoku toys */
-  div:has(> div.news-module__subheader > h3#todays-games-entrypoint-title) {
+  div.mb2:has(> section.artdeco-card > div.pv3 > div.games-entrypoints-module__subheader > h2#todays-games-entrypoint-title) {
     display: none;
   }
 }
