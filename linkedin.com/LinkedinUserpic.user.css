@@ -12,6 +12,11 @@
     > div.ivm-view-attr__img-wrapper > img.EntityPhoto-circle-8) {
     display: none !important;
   }
+  /* popup get premium */
+  div.launchpad-v2-card-with-image-5__image:has(
+    > div.ivm-image-view-model > div.ivm-view-attr__img-wrapper > img.EntityPhoto-circle-7) {
+    display: none;
+  }
   /* nav bar */
   div.global-nav__me > button.global-nav__primary-link-me-menu-trigger > img.global-nav__me-photo {
     opacity: 0;
