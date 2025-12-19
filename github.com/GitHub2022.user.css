@@ -35,4 +35,8 @@
     /* branch protection nag message */
     display: none;
   }
+  div.flash-container:has(> x-banner > section.Banner > div.Banner-message > p.Banner-title > span#holiday-warning-banner) {
+    /* holiday anxiety nag */
+    display: none;
+  }
 }
