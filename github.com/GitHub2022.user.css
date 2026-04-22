@@ -26,7 +26,7 @@
     /* copilot button in every header */
     display: none !important;
   }
-  span:has(> div > div > a[data-component="IconButton"] > svg.octicon-copilot) {
+  div:has(> div > a[data-component="IconButton"] > svg.octicon-copilot) {
     /* copilot button in every header */
     display: none;
   }

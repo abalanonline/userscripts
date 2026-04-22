@@ -21,8 +21,7 @@
   div.global-nav__me > button.global-nav__primary-link-me-menu-trigger > img.global-nav__me-photo {
     opacity: 0;
   }
-  div[data-testid="primary-nav"] > div > div > div > div > nav > ul > li
-    > button[data-view-name="navigation-settings"] > span > figure[role="image"] > img {
+  div[data-testid="primary-nav"] > div > div > div > div > div > nav > ul > li > button > span > figure > img {
     opacity: 0;
   }
   /* nav bar menu item */
@@ -39,14 +38,11 @@
     display: none;
   }
   /* sidebar */
-  a.profile-card-profile-picture-container:has(> img.profile-card-profile-picture) {
+  main#workspace > div > div > div > div > div > div > div > div > div > div > a > div > div:has(> figure > svg#person-accent-4) {
     display: none;
   }
-  a.profile-card-profile-link:has(> div.profile-card-background-image) {
-    display: none !important;
-  }
   /* start a post */
-  a.ember-view:has(> div.share-box-feed-entry__avatar > img.EntityPhoto-circle-3) {
+  div[role="list"] > div > div > div > a:has(> figure > svg#person-accent-4) {
     display: none;
   }
   /* banner inside the feed */
