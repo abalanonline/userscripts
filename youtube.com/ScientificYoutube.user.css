@@ -7,7 +7,7 @@
 
 @-moz-document domain("youtube.com") {
 
-ytd-rich-grid-renderer:has(> div#contents) {
+div#content > ytd-page-manager#page-manager > ytd-browse[role="main"]:has( > div#header:empty) {
     /* start page with suggested videos */
     display: none;
 }
@@ -31,9 +31,25 @@ div.ytp-ce-hide-button-container {
     /* hide button covering the playing video */
     display: none;
 }
+div.ytp-cards-teaser:has( > div.ytp-cards-teaser-text > span.ytp-cards-teaser-label) {
+    /* hide text covering the playing video */
+    display: none;
+}
 div.ytp-fullscreen-grid-stills-container {
     /* 1-3 related videos, there is a better list with hundreds of them */
     display: none;
+}
+a#logo > ytd-yoodle-renderer.ytd-topbar-logo-renderer:has( > picture.ytd-yoodle-renderer > img.ytd-yoodle-renderer) {
+    /* animated logo - off */
+    display: none;
+}
+a#logo > div:has(> ytd-logo > yt-icon#logo-icon) {
+    /* static logo - on */
+    display: block !important;
+}
+span#country-code {
+    /* country code - on */
+    display: block !important;
 }
 
 }

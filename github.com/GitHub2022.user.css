@@ -6,41 +6,43 @@
 ==/UserStyle== */
 
 @-moz-document domain("github.com") {
-  aside.feed-right-sidebar > div > div.js-notice > form.js-notice-dismiss {
-    /* top right ad banner */
-    display: none;
-  }
-  span:has(> span > svg.octicon-copilot) {
-    /* text ad in file view */
-    display: none;
-  }
-  div:has(> div.height-full > svg.octicon-copilot) {
-    /* ad in empty repo */
-    display: none;
-  }
-  div#dashboard > div.news > div.copilotPreview__container {
-    /* copilot form in home */
-    display: none;
-  }
-  div.AppHeader-globalBar > div.AppHeader-globalBar-end > div.AppHeader-CopilotChat {
-    /* copilot button in every header */
-    display: none !important;
-  }
-  div:has(> div > a[data-component="IconButton"] > svg.octicon-copilot) {
-    /* copilot button in every header */
-    display: none;
-  }
-  div:has(> div > h2#ai-search-cta-heading) {
-    /* ad popup in the center of the screen of GitHub Docs */
-    display: none;
-  }
-  div:has(> section[aria-label="Information"] > div > div > div.BannerDescription > span >
-    a[href="https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets"]) {
-    /* branch protection nag message */
-    display: none;
-  }
-  div.flash-container:has(> x-banner > section.Banner > div.Banner-message > p.Banner-title > span#holiday-warning-banner) {
-    /* holiday anxiety nag */
-    display: none;
-  }
+
+aside.feed-right-sidebar > div > div.js-notice > form.js-notice-dismiss {
+  /* top right ad banner */
+  display: none;
+}
+span:has(> span > svg.octicon-copilot) {
+  /* text ad in file view */
+  display: none;
+}
+div:has(> div.height-full > svg.octicon-copilot) {
+  /* ad in empty repo */
+  display: none;
+}
+div#dashboard > div.news > div.copilotPreview__container {
+  /* copilot form in home */
+  display: none;
+}
+div.AppHeader-globalBar > div.AppHeader-globalBar-end > div.AppHeader-CopilotChat {
+  /* copilot button in every header */
+  display: none !important;
+}
+div:has(> div > a[data-component="IconButton"] > svg.octicon-copilot) {
+  /* copilot button in every header */
+  display: none;
+}
+div:has(> div > h2#ai-search-cta-heading) {
+  /* ad popup in the center of the screen of GitHub Docs */
+  display: none;
+}
+div:has(> section[aria-label="Information"] > div > div > div.BannerDescription > span >
+  a[href="https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets"]) {
+  /* branch protection nag message */
+  display: none;
+}
+div.flash-container:has(> x-banner > section.Banner > div.Banner-message > p.Banner-title > span#holiday-warning-banner) {
+  /* holiday anxiety nag */
+  display: none;
+}
+
 }
