@@ -39,6 +39,11 @@ div.ytp-fullscreen-grid-stills-container {
     /* 1-3 related videos, there is a better list with hundreds of them */
     display: none;
 }
+div.ytp-overlays-container > div.ytp-overlay-bottom-right > div.ytp-overlay-inline-container
+    > div.iv-branding > button.branding-img-container > img.branding-img {
+    /* watermark in the bottom right */
+    display: none;
+}
 a#logo > ytd-yoodle-renderer.ytd-topbar-logo-renderer:has( > picture.ytd-yoodle-renderer > img.ytd-yoodle-renderer) {
     /* animated logo - off */
     display: none;
